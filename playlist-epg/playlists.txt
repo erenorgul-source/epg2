@@ -1,0 +1,8 @@
+# One playlist per line (URL or path relative to this file). Lines starting with # are ignored.
+https://iptv-org.github.io/iptv/languages/deu.m3u
+https://iptv-org.github.io/iptv/countries/uk.m3u
+https://iptv-org.github.io/iptv/countries/ie.m3u
+https://iptv-org.github.io/iptv/countries/au.m3u
+https://iptv-org.github.io/iptv/countries/nz.m3u
+https://iptv-org.github.io/iptv/countries/ca.m3u
+https://iptv-org.github.io/iptv/countries/us.m3u

@@ -14,3 +14,7 @@
 
 # macOS
 .DS_Store
+# playlist EPG
+/playlist-epg/public/
+/playlist-epg/work/
+/playlist-epg/.lock

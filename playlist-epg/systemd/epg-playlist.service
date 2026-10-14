@@ -1,0 +1,16 @@
+[Unit]
+Description=Build EPG for the configured IPTV playlists
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=@USER@
+Group=@USER@
+WorkingDirectory=@REPO_DIR@
+EnvironmentFile=/etc/epg-playlist/epg.env
+Environment=EPG_ENV_LOADED=1
+ExecStart=@REPO_DIR@/playlist-epg/run.sh
+TimeoutStartSec=8h
+Nice=10
+IOSchedulingClass=idle

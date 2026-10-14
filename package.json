@@ -16,6 +16,7 @@
     "guides:export": "tsx scripts/commands/guides/export.ts",
     "workers:load": "tsx scripts/commands/workers/load.ts",
     "grab": "tsx scripts/commands/epg/grab.ts",
+    "playlist:epg": "tsx scripts/commands/playlist/epg.ts",
     "lint": "npx eslint \"{scripts,tests,sites}/**/*.{ts,mts,js}\"",
     "test": "cross-env TZ=Pacific/Nauru npx jest --runInBand",
     "postinstall": "npm run api:load",

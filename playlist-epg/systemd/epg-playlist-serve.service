@@ -1,0 +1,15 @@
+[Unit]
+Description=Serve the playlist EPG over HTTP
+After=network.target
+
+[Service]
+User=@USER@
+Group=@USER@
+WorkingDirectory=@REPO_DIR@
+EnvironmentFile=/etc/epg-playlist/epg.env
+ExecStart=/bin/sh -c 'exec "@REPO_DIR@/node_modules/.bin/serve" --no-clipboard --listen "tcp://0.0.0.0:${EPG_PORT:-3000}" "${EPG_DATA_DIR:-/var/lib/epg-playlist}/public"'
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

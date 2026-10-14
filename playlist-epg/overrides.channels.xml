@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Manual mappings. They are tried before any automatic match.
+
+  xmltv_id  = the tvg-id of the channel in the playlist
+  site, site_id, lang = copied from the matching line in sites/<site>/<site>*.channels.xml
+
+  Example:
+  <channel site="sky.com" site_id="GB#3000" lang="en" xmltv_id="BBCOne.uk@London">BBC One Lon HD</channel>
+-->
+<channels>
+</channels>
